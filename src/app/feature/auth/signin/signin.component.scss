@@ -1,15 +1,18 @@
 :host {
-  @apply w-full h-full block;
+  @apply w-full h-full flex flex-col items-center justify-center;
 
-  .pp-signin-form {
+  .app-signin-form {
+    @apply h-full flex flex-col;
+    width: 100%;
 
     .app-signin-form-email {
-
+      @apply pb-5
     }
+  }
+}
 
-    .app-signin-form-submit-button {
-
-    }
-
+@media (min-width: 521px) {
+  .app-signin-form {
+    width: 521px !important;
   }
 }
